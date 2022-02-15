@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/show.css">
+  </head>
+<body>
+
+  <section class="sub-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="https://img.icons8.com/external-flat-lima-studio/2x/external-book-university-flat-lima-studio.png" alt="" width="30" height="30">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/lib">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <p></p>
+
+      <h1><span class="heading"> Find your next read.... </span></h1><br>
+      <div class="container">
+        <a href="/lib/add"><button type="button" class="btn btn-outline-success btn-lg btn-block"> ADD BOOK</button></a><p></p>
+      <ul> 
+        <% for(let book of books){ %> 
+
+          <!-- <div class="card text-center">
+            <div class="card-body">
+
+              <img src="<%= book.imageLink %> " alt="" class="card-img-top">
+              <h5 class="card-title"><%= book.title %></h5>
+              <p class="card-text"><%= book.author %></p>
+              <a href="/lib/<%= book._id %> " class="btn btn-primary">View</a>
+            </div>
+            </div> -->
+
+            <div class="row">
+              <div class="col-sm-9">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <h5 class="card-title"><%= book.title %></h5>
+                                <p class="card-text"><%= book.author %></p>
+                                <a href="/lib/<%= book._id %> " class="btn btn-info">View</a>
+                                    </div>
+                              <div class="col-sm-6 text-right">
+                                  <img class="" src="<%= book.imageLink %> " alt="sans" width="100px">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <p></p>
+          <% } %>  
+      </ul>
+
+    </div>
+
+    <footer><p><br></p>
+      <div class="text-center">
+          <q>A reader lives a thousand lives before he dies <br>. . . The man who never reads lives only one.</q>
+          <br><span class="quot">~ George R.R. Martin</span>
+      </div><p><br></p>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </html>

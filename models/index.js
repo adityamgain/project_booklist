@@ -10,13 +10,16 @@ const bookSchema= new Schema({
         type:String,
         required:true, 
     },
-    availability:{
-        type:Boolean
+    description:{
+        type:String,
+        required:true,
     },
     imageLink:{
-        type:String
+        type:String,
+    },
+    find:{
+        type:String,
     }
-})
+});
 
-const bookdata= mongoose.model('bookdata',bookSchema);
-module.exports=bookdata;
+module.exports= mongoose.model('bookdata',bookSchema);

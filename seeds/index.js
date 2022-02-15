@@ -2,31 +2,28 @@ const mongoose= require('mongoose');
 const data = require('./data');
 const bookdata= require('../models/index')
 
-mongoose.connect('mongodb://localhost:27017/p', {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(()=>{
-        console.log('MONGOOSE CONNECTED')
-    })
-    .catch(err =>{
-        console.log('CAUTION!!!')
-        console.log(err)
-    })
+mongoose.connect('mongodb://localhost:27017/p',     err => {
+    if(err) throw err;
+    console.log('connected to MongoDB')
+});
 
-    
 
     const seedDB= async()=>{
         await bookdata.deleteMany({});
-        for(let i=0; i<20 ; i++){
-        const booklist=await JSON.parse(JSON.stringify(data))
+        for(let i=1;i<6;i++){
         const list= new bookdata({
-            title:`${booklist["title"]}`,
-            author:`${booklist.author}`,
+            // title:`${data[i].title}`,
+            // author:`${data[i].title}`,
+          title:`rich dad poor dad`,
+          author:`rodriquiz`,
+          _id:`61f648f4071a917448465290`
           //  availability:true
           //  imageLink:
         })
         await list.save();
         }
     }
-
+    
     seedDB().then(()=>{
         mongoose.connection.close();
     })

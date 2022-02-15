@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/new.css">
+<!-- CSS only -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  h2{
+    background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 80px;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/lib">
+          <img src="https://img.icons8.com/external-flat-lima-studio/2x/external-book-university-flat-lima-studio.png" alt="" width="30" height="30">
+        </a>
+      </nav>
+<p>
+
+</p>
+
+    <h2>Add Book detail</h2>
+    <form action="/lib" method="POST">
+<div class="container">
+<div class="justify-content-md-center">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Title</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1" name=book[title]>
+          </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Author</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Author" aria-describedby="basic-addon1" name=book[author]>
+          </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name=book[description]></textarea>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Img URL</span>
+            </div>
+            <input type="text" class="form-control" placeholder="image location url" aria-describedby="basic-addon1" name="book[imageLink]">
+          </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">URL</span>
+            </div>
+            <input type="text" class="form-control" placeholder="@" aria-describedby="basic-addon1" name="book[find]">
+          </div>
+
+
+          <button class="btn btn-success btn-lg btn-block">Add +</button>
+    </div>
+    </div>
+    </form>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

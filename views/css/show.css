@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGF0dGVybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    color:black;
+}
+
+.card{
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+    border:2px solid;
+    border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;
+}
+
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+button a:hover{
+    text-decoration: none;
+    color:aliceblue;
+    border:1px;
+}
+h1{
+    font-family:cursive;
+    font-weight: 400;
+    margin-left: 4vh;
+    color: purple;
+}
+.card-title{
+    color: black;
+    font-weight: 500;
+    font-size:3vh;
+}
+.card-text{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 300;
+}
+.card:hover{
+    opacity: 0.9;
+    border:2px solid whitesmoke;
+}
+.heading{
+    background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 200px;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',helvetica, arial, sans-serif;
+    font-weight: 450;
+    -webkit-font-smoothing: antialiased;
+}
+.row{
+    align-items: center;
+    justify-content: center;
+}
+footer q{
+    background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family:monospace;
+    -webkit-font-smoothing: antialiased;
+}
+.quot{
+    background-image: url("https://images.unsplash.com/photo-1569531115477-5e9a74a6a8ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fHBhdHRlcm58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 90px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family:fantasy;
+    -webkit-font-smoothing: antialiased;
+}

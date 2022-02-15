@@ -1,0 +1,13 @@
+h2{
+    background-image: url("https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
